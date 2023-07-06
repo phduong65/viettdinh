@@ -10,7 +10,7 @@
 
 body {
     font-family: "HypatiaSansPro";
-
+    box-sizing: border-box;
 }
 
 .container {
@@ -777,5 +777,7 @@ body {
     .header .header-content .cart span{
         display: none;
     }
-    .footer-post .video-container{}
+    .footer-post .video-container{
+        width: 100%;
+    }
 }
