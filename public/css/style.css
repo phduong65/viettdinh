@@ -648,6 +648,9 @@ body {
         width: 100%;
         z-index: 1;
     }
+    .footer-post .video-container{
+        width: 100%;
+    }
 }
 
 @media (max-width:767px) {  
