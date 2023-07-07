@@ -21,3 +21,30 @@ $(document).ready(function(){
         category_bar.style.display = "block"
     }
   })
+
+  const nav = document.querySelector('.header');
+  window.addEventListener('scroll',function () {
+    if (this.window.pageYOffset>0) {
+        nav.style.position = `fixed`;
+        nav.style.top = '0px';
+        nav.style.width = `100%`;
+    }
+    else{
+        nav.style.position = `static`;
+    }
+  })
+
+  const dropdownFooter = document.querySelectorAll('.item .header-item span svg');
+  const titleItem = document.querySelectorAll('.item .title-item');
+  dropdownFooter.forEach((element,index) => {
+    element.addEventListener('click',function () {
+        if (titleItem[index].style.display==`none`) {
+            element.style.transform = `rotate(180deg)`;
+            titleItem[index].style.display=`block`;
+        }
+        else{
+            element.style.transform = `rotate(0deg)`;
+            titleItem[index].style.display=`none`;
+        }
+    })
+  });
