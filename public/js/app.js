@@ -27,7 +27,7 @@ $("#search").placeholderTypewriter({
             auto: true,
             manualMode: 'auto',
             pauseOnHover: 1,
-            speed: 1,
+            speed: 5,
             loop: 0
 		});
 	});
