@@ -608,9 +608,6 @@ body {
     .footer-content .list-content .item{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
     }
 
     .footer-post {
@@ -692,7 +689,6 @@ body {
 
     .footer-content .list-content {
         align-items: start;
-        padding: 0 20%;
     }
 
     .footer-content .list-content .item:nth-child(1) {
@@ -713,7 +709,6 @@ body {
         align-items: start;
         justify-content: center;
         gap: 20px;
-        padding: 0 20%;
     }
     .footer-post .list-post{
         padding: 0;
@@ -725,7 +720,7 @@ body {
 
     .footer-bottom-content {
         display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: center;
         flex-direction: column;
     }
@@ -782,5 +777,13 @@ body {
     }
     .footer-post .video-container{
         width: 100%;
+    }
+    .footer-bottom-content .keyword .box-keyword {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+    .copy-right {
+        font-size: 10px;
     }
 }
