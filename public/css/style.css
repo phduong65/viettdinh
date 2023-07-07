@@ -23,6 +23,7 @@ body {
     background-image: url(../img/Vector\ 2.png);
     background-repeat: no-repeat;
     height: 44px;
+    background-color: #FFF;
 }
 
 .top-header-content {
@@ -44,6 +45,10 @@ body {
     font-style: italic;
     font-weight: 300;
     line-height: normal;
+}
+.nav-header{
+    z-index: 1;
+    transition: all .3s ease-in-out;
 }
 .header{
     background-color: #fff;
@@ -155,7 +160,7 @@ body {
     align-items: center;
     background-color: #fff;
     cursor: pointer;
-
+    transition: all .3s ease-in-out;
 }
 
 .category-banner-content .category-header span {
@@ -662,7 +667,26 @@ body {
     }
 
     .category-banner-content .category {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 0;
+    }
+    .category-banner-content .category .category-header{
+        background-color: unset;
+        border: none;
+        position: fixed;
+        top: 55px;
+        z-index: 9999;
+    }
+    .category-banner-content .category .category-header span{
         display: none;
+    }
+    .category-banner-content .category .category-bar{
+        display: none;
+        position: fixed;
+        width: 100%;
+        top: 100px;
     }
 
     .bottom-header .bottom-header-content {
