@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./public/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./public/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="public/css/font.css">
+
+    <link rel="stylesheet" href="./public/css/jquery.simplyscroll.css" media="all" type="text/css">
 </head>
 
 <body>
@@ -42,7 +44,7 @@
                         </div>
                         <div class="search-bar">
                             <div class="search">
-                                <input type="text" class="search-item" placeholder="Bạn đang tìm kiếm gì ?">
+                                <input type="text" class="search-item" id="search">
                                 <button type="submit" class="search-btn">
                                     Tìm kiếm
                                 </button>
@@ -157,7 +159,7 @@
                                 </g>
                             </svg>
 
-                            <span>Hotline hỗ trợ 
+                            <span>Hotline hỗ trợ
                                 <svg fill="#000000" height="8px" width="8px" version="1.1" id="Layer_1"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     viewBox="0 0 330 330" xml:space="preserve">
@@ -302,52 +304,70 @@
                     </li>
                 </ul>
                 <div class="footer-post">
-                    <ul class="list-post">
-                        <li class="post">
-                            <img src="./public/img/Rectangle 27 (1).png" alt="" srcset="">
-                            <div class="item">
-                                <span class="post-title">Top 20 máy lạnh giá rẻ giúp tiết kiệm điện được ưa chuộng
-                                    2023</span>
-                                <span class="post-content">Với thời tiết mùa hè oi bức thì máy lạnh là một “người bạn”
-                                    đồng hành thiết thực cho mọi gia đình. Thế nhưng, vấn đề tiền điện tăng cao khi sử
-                                    dụng máy lạnh...</span>
-                            </div>
-
-                        </li>
-                        <li class="post">
-                            <img src="./public/img/Rectangle 27 (1).png" alt="" srcset="">
-                            <div class="item">
-                                <span class="post-title">Top 20 máy lạnh giá rẻ giúp tiết kiệm điện được ưa chuộng
-                                    2023</span>
-                                <span class="post-content">Với thời tiết mùa hè oi bức thì máy lạnh là một “người bạn”
-                                    đồng hành thiết thực cho mọi gia đình. Thế nhưng, vấn đề tiền điện tăng cao khi sử
-                                    dụng máy lạnh...</span>
-                            </div>
-
-                        </li>
-                        <li class="post">
-                            <img src="./public/img/Rectangle 27 (1).png" alt="" srcset="">
-                            <div class="item">
-                                <span class="post-title">Top 20 máy lạnh giá rẻ giúp tiết kiệm điện được ưa chuộng
-                                    2023</span>
-                                <span class="post-content">Với thời tiết mùa hè oi bức thì máy lạnh là một “người bạn”
-                                    đồng hành thiết thực cho mọi gia đình. Thế nhưng, vấn đề tiền điện tăng cao khi sử
-                                    dụng máy lạnh...</span>
-                            </div>
-
-                        </li>
-                        <li class="post">
-                            <img src="./public/img/Rectangle 27 (1).png" alt="" srcset="">
-                            <div class="item">
-                                <span class="post-title">Top 20 máy lạnh giá rẻ giúp tiết kiệm điện được ưa chuộng
-                                    2023</span>
-                                <span class="post-content">Với thời tiết mùa hè oi bức thì máy lạnh là một “người bạn”
-                                    đồng hành thiết thực cho mọi gia đình. Thế nhưng, vấn đề tiền điện tăng cao khi sử
-                                    dụng máy lạnh...</span>
-                            </div>
-
-                        </li>
-                    </ul>
+                    <div class="roll_new">
+                        <ul class="list-post" >
+                            <li >
+                                <a href="">
+                                    <div class="img-tt">
+                                        <img src="./public/img/Rectangle 27 (1).png" alt="" srcset="">
+                                    </div>
+                                    <div class="item">
+                                        <strong class="post-title">Top 20 máy lạnh giá rẻ giúp tiết kiệm điện được ưa chuộng
+                                            2023</strong>
+                                        <span class="post-content">Với thời tiết mùa hè oi bức thì máy lạnh là một “người bạn”
+                                            đồng hành thiết thực cho mọi gia đình. Thế nhưng, vấn đề tiền điện tăng cao khi sử
+                                            dụng máy lạnh...</span>
+                                    </div>
+                                </a>
+    
+                            </li>
+                            <li >
+                                <a href="">
+                                    <div class="img-tt">
+                                        <img src="./public/img/Rectangle 27 (1).png" alt="" srcset="">
+                                    </div>
+                                    <div class="item">
+                                        <strong class="post-title">Top 20 máy lạnh giá rẻ giúp tiết kiệm điện được ưa chuộng
+                                            2023</strong>
+                                        <span class="post-content">Với thời tiết mùa hè oi bức thì máy lạnh là một “người bạn”
+                                            đồng hành thiết thực cho mọi gia đình. Thế nhưng, vấn đề tiền điện tăng cao khi sử
+                                            dụng máy lạnh...</span>
+                                    </div>
+                                </a>
+    
+                            </li>
+                            <li >
+                                <a href="">
+                                    <div class="img-tt">
+                                        <img src="./public/img/Rectangle 27 (1).png" alt="" srcset="">
+                                    </div>
+                                    <div class="item">
+                                        <strong class="post-title">Top 20 máy lạnh giá rẻ giúp tiết kiệm điện được ưa chuộng
+                                            2023</strong>
+                                        <span class="post-content">Với thời tiết mùa hè oi bức thì máy lạnh là một “người bạn”
+                                            đồng hành thiết thực cho mọi gia đình. Thế nhưng, vấn đề tiền điện tăng cao khi sử
+                                            dụng máy lạnh...</span>
+                                    </div>
+                                </a>
+    
+                            </li>
+                            <li >
+                                <a href="">
+                                    <div class="img-tt">
+                                        <img src="./public/img/Rectangle 27 (1).png" alt="" srcset="">
+                                    </div>
+                                    <div class="item">
+                                        <strong class="post-title">Top 20 máy lạnh giá rẻ giúp tiết kiệm điện được ưa chuộng
+                                            2023</strong>
+                                        <span class="post-content">Với thời tiết mùa hè oi bức thì máy lạnh là một “người bạn”
+                                            đồng hành thiết thực cho mọi gia đình. Thế nhưng, vấn đề tiền điện tăng cao khi sử
+                                            dụng máy lạnh...</span>
+                                    </div>
+                                </a>
+    
+                            </li>
+                        </ul>
+                    </div>
                     <div class="video-container">
                         <video id="myVideo" controls>
                             <source src="" type="video/mp4">
@@ -413,13 +433,14 @@
                                     </g>
                                 </svg>
 
-                                <span>SIÊU THỊ ĐIỆN MÁY VIỆT DINH <svg fill="#000000" height="8px" width="8px" version="1.1" id="Layer_1"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    viewBox="0 0 330 330" xml:space="preserve">
-                                    <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                                <span>SIÊU THỊ ĐIỆN MÁY VIỆT DINH <svg fill="#000000" height="8px" width="8px"
+                                        version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
+                                        xml:space="preserve">
+                                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
                                c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
                                s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
-                                </svg></span>
+                                    </svg></span>
                             </div>
                             <div class="title-item ">
                                 <p style="font-style: italic;"><span style="font-weight: 600; ">Điện máy Việt
@@ -492,13 +513,14 @@
                                     </g>
                                 </svg>
 
-                                <span>Gợi ý từ khóa <svg fill="#000000" height="8px" width="8px" version="1.1" id="Layer_1"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    viewBox="0 0 330 330" xml:space="preserve">
-                                    <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                                <span>Gợi ý từ khóa <svg fill="#000000" height="8px" width="8px" version="1.1"
+                                        id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
+                                        xml:space="preserve">
+                                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
                                c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
                                s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
-                                </svg></span>
+                                    </svg></span>
                             </div>
                             <div class="title-item ">
                                 <div class="box-keyword">
@@ -526,9 +548,14 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="./public/owlcarousel/owl.carousel.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js">
+    </script>
+    <script src="./public/js/placeholderTypewriter.js"></script>
+    <!-- <script src="./public/owlcarousel/owl.carousel.min.js"></script> -->
+    <script type="text/javascript" src="./public/js/jquery.simplyscroll.js"></script>
     <script src="./public/js/app.js"></script>
+
 </body>
 
 </html>
