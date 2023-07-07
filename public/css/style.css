@@ -695,6 +695,7 @@ body {
 
     .footer-content .list-content {
         align-items: start;
+        padding-left: 10px;
     }
 
     .footer-content .list-content .item:nth-child(1) {
@@ -715,6 +716,7 @@ body {
         align-items: start;
         justify-content: center;
         gap: 20px;
+        padding: 20px 0;
     }
     .footer-post .list-post{
         padding: 0;
@@ -729,6 +731,7 @@ body {
         align-items: start;
         justify-content: center;
         flex-direction: column;
+        padding-left: 10px;
     }
 
     .copy-right {
@@ -784,18 +787,24 @@ body {
     .footer-post .video-container{
         width: 100%;
     }
+    .footer-post .item{
+        padding-left: 10px;
+    }
     .footer-bottom-content .keyword .box-keyword {
         flex-direction: column;
         align-items: start;
         justify-content: start;
     }
     .copy-right {
-        font-size: 11px;
+        font-size: 10px;
     }
     .item .header-item span svg{
         display: inline-block;
     }
     .item .title-item {
+        display: none;
+    }
+    .line img{
         display: none;
     }
 }
