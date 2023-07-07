@@ -1,14 +1,14 @@
-// $(document).ready(function () {
-//   $(".owl-carousel").owlCarousel({
-//     loop: true,
-//     margin: 20,
-//     autoplay: true,
-//     slideTransition: "linear",
-//     autoplayTimeout: 1000,
-//     autoplaySpeed: 100,
-//     autoplayHoverPause: true,
-//   });
-// });
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    slideTransition: "linear",
+    autoplayTimeout: 1000,
+    autoplaySpeed: 100,
+    autoplayHoverPause: true,
+  });
+});
 $("#search").placeholderTypewriter({
   text: [
     "Tìm kiếm sản phẩm...",
